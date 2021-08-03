@@ -88,4 +88,46 @@ topContent2H4.textContent = siteContent["main-content"]["about-h4"]
 const topContent2P = topContent2H4.nextElementSibling
 topContent2P.textContent = siteContent["main-content"]["about-content"]
 
+//img
 
+const middleImg = document.querySelector(".middle-img")
+middleImg.src = siteContent["main-content"]["middle-img-src"]
+ //1 container
+
+const servicesH4 = document.querySelector(".bottom-content .text-content:nth-of-type(1) h4")
+servicesH4.textContent= siteContent["main-content"]["services-h4"]
+
+const servicesContent = servicesH4.nextElementSibling
+servicesContent.textContent = siteContent["main-content"]["services-content"]
+
+//2 container
+const productH4 = document.querySelector(".bottom-content .text-content:nth-of-type(2) h4")
+productH4.textContent= siteContent["main-content"]["product-h4"]
+
+const productContent = productH4.nextElementSibling
+productContent.textContent = siteContent["main-content"]["product-content"]
+
+//3
+
+const visionH4 = document.querySelector(".bottom-content .text-content:nth-of-type(3) h4")
+visionH4.textContent= siteContent["main-content"]["vision-h4"]
+
+const visionContent = visionH4.nextElementSibling
+visionContent.textContent = siteContent["main-content"]["vision-content"]
+
+//updating the footer
+
+const contactH4 = document.querySelector(".contact h4")
+contactH4.textContent = siteContent["contact"]["contact-h4"]
+
+const contactP1 = contactH4.nextElementSibling
+contactP1.textContent = siteContent["contact"]["address"]
+
+const contactP2 = contactP1.nextElementSibling
+contactP2.textContent = siteContent["contact"]["phone"]
+
+const contactP3 = contactP2.nextElementSibling
+contactP3.textContent = siteContent["contact"]["email"]
+
+const footer = document.querySelector("footer p")
+footer.textContent = siteContent["footer"]["copyright"]
